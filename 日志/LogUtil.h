@@ -1,20 +1,31 @@
 //
 //  LogUtil.h
+//  AUCDemo
 //
-//  Created by liuchendi on 15/1/4.
-//  Copyright (c) 2015年 . All rights reserved.
+//  Created by 4399 on 15/1/4.
+//  Copyright (c) 2015年 4399. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 #define ENABLE_ASSERT_STOP          1
-
-
 //debug
-#ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define  AUCDEBUG  0
+#if AUCDEBUG
+#define DLog(fmt, ...)              NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define DETAIL_LOG(format, ...)     NSLog((@"%@ [Line %d] " format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define POINT_LOG(name, point)      NSLog(@"%@ : %@", name, NSStringFromCGPoint(point))
+#define SIZE_LOG(name, size)        NSLog(@"%@ : %@", name, NSStringFromCGSize(size))
+#define RECT_LOG(name, rect)        NSLog(@"%@ : %@", name, NSStringFromCGRect(rect))
+#define TRACE(format, ...)          NSLog([NSString stringWithFormat:@"%@.%@:%@",\
+                                            [self class],NSStringFromSelector(_cmd),format], ##__VA_ARGS__)
 #else
 #   define DLog(...)
+#define DETAIL_LOG(format, ...)
+#define POINT_LOG(name, point)
+#define SIZE_LOG(name, size)
+#define RECT_LOG(name, rect)
+#define TRACE(format, ...)
 #endif
 
 
@@ -26,9 +37,9 @@
 #define XCODE_COLORS_RESET     XCODE_COLORS_ESCAPE @";"   // Clear any foreground or
 
 //background color
-#define LogBlue(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,150,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
-#define LogRed(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg250,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
-#define LogGreen(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,235,30;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+#define LogBlue(frmt, ...)  NSLog((XCODE_COLORS_ESCAPE @"fg0,150,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+#define LogRed(frmt, ...)   NSLog((XCODE_COLORS_ESCAPE @"fg250,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+#define LogGreen(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"8fg0,235,30;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
 
 // assert
 #ifdef ENABLE_ASSERT_STOP
@@ -39,7 +50,7 @@
 #define APP_ASSERT(condition)               do {} while (0);
 #endif
 
-
+#define  AUC_STRING(fmt,...) [NSString stringWithFormat:(fmt),##__VA_ARGS__]
 @interface LogUtil : NSObject
 
 @end
