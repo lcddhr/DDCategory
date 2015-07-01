@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>乐驼网 - 圈子权限设置</title>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // 点击左上角三条竖向弹出的框
+        $('.suoyou').click(function(){
+            $('.wodequanzi_all').toggle();
+        });
+        // 点击左上角三条竖向弹出的框
+        // 右上角乐事
+        $('.mulu').click(function(){
+            $('.mulu_go').show();
+        });
+        $('.mulu_go').click(function(){
+            $('.mulu_go').hide();
+        });
+        
+    });
+
+</script>
+</head>
+
+<body>
+
+    <div id="box">
+        <img src="images/top.gif" />
+    </div>
+    <div id="index_top2">
+        <!-- 返回按钮 -->
+        <a href="javascript:history.back(-1)" class="fk"></a>
+        <!-- 返回按钮结束 -->
+        <!-- 完成按钮 -->
+        <a href="javascript:history.back(-1)" class="wancheng"></a>
+        <!-- 完成按钮节结束 -->
+        <div class="wodequanzi_all"></div>
+        <!-- 点击左上角三条竖向弹出的框结束 -->
+        <p class="wodequanzi_power"></p>
+    </div>
+    <!-- 主体内容 -->
+    <div id="wodequanzi_new">
+        
+    </div>
+    <!-- 主体内容结束 -->
+
+</body>
+</html>

@@ -11,6 +11,9 @@
 
 [ZLPhotoLib](https://github.com/MakeZL/ZLPhotoLib)
 
+[头像处理](https://github.com/windshg/VPImageCropper)
+
+
 
 
 

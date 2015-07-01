@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>乐驼网首页</title>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // 搜索框
+        $('.search').click(function(){
+            $('#pindao').toggle();
+            $('#sosuo_xinxi').toggle();
+        });
+        $('.sosuo_close').click(function(){
+            $('#sosuo_xinxi').hide();
+            $('#pindao').show();
+        });
+        // 搜索框结束
+
+        $('.all_gn').click(function(){
+            $('.all_bg').show();
+        });
+
+        $('.all_bg').click(function(){
+            $('.all_bg').hide();
+        });
+
+        // 点击左上角三条竖向弹出的框
+        $('.suoyou').click(function(){
+            $('.suoyouxinxi_sy3').toggle();
+        });
+        // 点击左上角三条竖向弹出的框
+        // 右上角乐事
+        $('.mulu').click(function(){
+            $('.mulu_go').show();
+        });
+        $('.mulu_go').click(function(){
+            $('.mulu_go').hide();
+        });
+
+        // 点击右下角头像弹出我的圈子框
+        $('.youxia').click(function(){
+            $('.wodequanzi').show();
+            $('.youxia2').show();
+        });
+        $('.youxia2').click(function(){
+            $('.wodequanzi').hide();
+            $('.youxia2').hide();
+        });
+        // 点击右下角头像弹出我的圈子框结束
+        // 点击更多
+        $('.more_yuan').click(function(){
+            $('.more').show();
+            $('.more_gn').show();
+        });
+
+        $('.more').click(function(){
+            $('.more').hide();
+            $('.more_gn').hide();
+        });
+        // 点击更多弹出框结束
+        
+    });
+
+</script>
+</head>
+
+<body>
+
+	<div id="box">
+        <img src="images/top.gif" />
+    </div>
+    <!-- 功能条开始 -->
+    <div id="index_top2">
+        <!-- 左上角的三条竖线 -->
+        <a href="#" class="suoyou"></a>
+        <!-- 点击左上角三条竖向弹出的框 -->
+        <div class="suoyouxinxi_sy3">
+            <!-- 所有信息按钮 -->
+            <a href="index.html" class="all_xinxi"></a>
+            <!-- 乐事按钮 -->
+            <a href="leshi.html" class="sy_leshi"></a>
+            <!-- 话题按钮 -->
+            <a href="huati.html" class="sy_huati"></a>
+            <!-- 乐讯按钮 -->
+            <a href="lexun.html" class="sy_lexun"></a>
+        </div>
+        <!-- 点击左上角三条竖向弹出的框结束 -->
+        <!-- 搜索按钮 -->
+        <a href="#" class="search"></a>
+        <!-- 搜索按钮结束 -->
+        <!-- 发布按钮 -->
+        <a class="mulu"></a>
+        <div class="mulu_go">
+            <a href="leshi_fabu.html" class="fabuleshi"></a>
+            <!-- 话题按钮 -->
+            <a href="huati_fabu.html" class="huati"></a>
+            <!-- 乐讯发布 -->
+            <a href="lexun_fabu.html" class="lexun_fabu"></a>
+        </div>
+        <!-- 发布按钮结束 -->
+        <!-- top2的背景 -->
+        <img src="images/shouye_gongneng.gif" height="70" />
+    </div>
+    <!-- 功能条结束 -->
+    <div id="pindao">
+        <!-- 全部小图标 -->
+        <a href="#" class="all_gn"></a>
+        <!-- 点击全部的弹出框 -->
+        <a href="#" class="all_bg"></a>
+        <!-- 点击全部的弹出框结束 -->
+        <div class="gn"></div>
+    </div>
+    <!-- 搜索框 -->
+    <div id="sosuo_xinxi">
+        <input type="text" value="搜索信息" class="sosuoxinxi" />
+        <a href="" class="sosuo_close"></a>
+    </div>
+    <!-- 搜索框结束 -->
+    <!-- 主体内容 -->
+    <div id="huati_content">
+        <a href="huati_detail.html" class="huati_one"></a>
+    </div>
+    <!-- 主体内容结束 -->
+    <div id="shouye_bottom">
+        <!-- 更多 -->
+        <!-- 主页按钮 -->
+        <a href="index.html" class="s_sy"></a>
+        <!-- 主页按钮结束 -->
+        <!-- 消息按钮 -->
+        <a href="xiaoxi.html" class="xiaoxi_an2"></a>
+        <!-- 消息按钮结束 -->
+        <!-- 好友按钮 -->
+        <a href="wodehaoyou.html" class="friend"></a>
+        <!-- 好友按钮结束 -->
+        <!-- 圈子按钮 -->
+        <a href="wodequanzi.html" class="s_quanzi"></a>
+        <!-- 圈子按钮结束 -->
+        <a class="more_yuan"></a>
+        <a class="more"></a>
+        <div class="more_gn">
+            <!-- 更多_任务 -->
+        <a href="woderenwu.html" class="renwu"></a>
+            <!-- 更多_任务 -->
+            <!-- 更多_广场 -->
+        <a href="guangchang.html" class="guangchang"></a>
+            <!-- 更多_广场结束 -->
+            <!-- 更多_收藏 -->
+            <a href="shoucang.html" class="shoucang"></a>
+            <!-- 更多_收藏结束 -->
+            <!-- 更多_个人资料 -->
+        <a href="gerenziliao.html" class="gerenziliao"></a>
+            <!-- 更多_个人资料结束 -->
+            <!-- 更多_系统设置 -->
+        <a href="xitong_shezhi.html" class="xitong_shezhi"></a>
+            <!-- 更多_系统设置结束  -->
+        </div>
+        <!-- 更多结束 -->
+        <!-- 我的圈子弹出框 -->
+        <a class="youxia"></a>
+        <div class="youxia2"></div>
+        <div class="wodequanzi">
+            <!-- 创建身份 -->
+            <a href="new_shenfen.html" class="new_shenfen"></a>
+        </div>
+        <!-- 我的圈子弹出框结束 -->
+    </div>
+   
+</body>
+</html>

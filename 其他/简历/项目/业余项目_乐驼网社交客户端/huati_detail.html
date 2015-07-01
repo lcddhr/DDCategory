@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>乐驼网 - 话题详情</title>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        // 搜索框
+        $('.search').click(function(){
+            $('#pindao').toggle();
+            $('#sosuo_xinxi').toggle();
+        });
+        $('.sosuo_close').click(function(){
+            $('#sosuo_xinxi').hide();
+            $('#pindao').show();
+        });
+        // 搜索框结束
+
+        $('.all_gn').click(function(){
+            $('.all_bg').show();
+        });
+
+        $('.all_bg').click(function(){
+            $('.all_bg').hide();
+        });
+
+        // 点击左上角三条竖向弹出的框
+        $('.suoyou').click(function(){
+            $('.suoyouxinxi_sy').toggle();
+        });
+        // 点击左上角三条竖向弹出的框
+        // 右上角乐事
+        $('.mulu').click(function(){
+            $('.mulu_go').show();
+        });
+        $('.mulu_go').click(function(){
+            $('.mulu_go').hide();
+        });
+
+        // 点击右下角头像弹出我的圈子框
+        $('.youxia').click(function(){
+            $('.wodequanzi').show();
+            $('.youxia2').show();
+        });
+        $('.youxia2').click(function(){
+            $('.wodequanzi').hide();
+            $('.youxia2').hide();
+        });
+        // 点击右下角头像弹出我的圈子框结束
+        // 点击更多
+        $('.more_yuan').click(function(){
+            $('.more').show();
+            $('.more_gn').show();
+        });
+
+        $('.more').click(function(){
+            $('.more').hide();
+            $('.more_gn').hide();
+        });
+        // 点击更多弹出框结束
+        
+    });
+
+</script>
+<style type="text/css">
+    #index_top2{
+        border-bottom: none;
+    }
+</style>
+</head>
+
+<body>
+
+    <div id="box">
+        <img src="images/top.gif" />
+    </div>
+    <div id="index_top2">
+        <a href="javascript:history.back(-1)" class="back"></a>
+        <p class="huati_bt"></p>
+        <!-- 发布按钮 -->
+        <a class="mulu"></a>
+        <div class="mulu_go">
+        <a href="leshi_fabu.html" class="fabuleshi"></a>
+        <!-- 话题按钮 -->
+        <a href="huati_fabu.html" class="huati"></a>
+        <!-- 乐讯发布 -->
+        <a href="lexun_fabu.html" class="lexun_fabu"></a>
+        </div>
+        <!-- 发布按钮结束 -->
+    </div>
+    <div id="huati_detail">
+        <a href="huati_pinglun.html" class="pinglun"></a>
+    </div>
+   
+</body>
+</html>

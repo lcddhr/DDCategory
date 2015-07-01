@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>乐驼网登录</title>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript">
+        
+    $(document).ready(function(){
+
+        // JS模拟复选框效果
+        $('.fuxuankuang').click(function(){
+            $('.fuxuankuang2').show();
+        });
+        $('.fuxuankuang2').click(function(){
+            $('.fuxuankuang2').hide();
+        });
+        // JS模拟复选框效果结束
+
+    });
+
+</script>
+</head>
+
+<body>
+
+	<div id="box">
+    	<img src="images/top.gif" />
+    </div>
+    <div id="top2">
+    	<img src="images/letuo.gif" />
+        <a href="join.html" class="zhuce"></a>
+    </div>
+    <div id="banner"></div>
+    <div id="main">
+    	<div type="text" class="username">
+            <input type="text" />   
+        </div>
+        <div type="password" class="password">
+            <input type="text" />
+        </div>
+        <div id="wangjimima">
+            <!-- JS模拟复选框效果 -->
+        	<div class="fuxuankuang"></div>
+            <div class="fuxuankuang2"></div>
+            <!-- JS模拟复选框效果就结束 -->
+            <span class="jizhumima" style="width:30px">记住密码</span>
+            <a href="look_for_password_phone.html" class="mima">忘记密码</a>
+        </div>
+        
+        <a href="index.html" class="login"></a>
+    </div>
+    <div id="bottom">
+        <a href="login_qq.html" class="qq"></a>
+    </div>
+   
+</body>
+</html>

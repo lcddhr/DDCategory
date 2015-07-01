@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: black;
+}
+
+#header{
+	width: 640px;
+	height: 40px;
+	background: url(../images/top.gif);
+	margin: 0 auto;
+}
+#top{
+	width: 640px;
+	height: 70px;
+	background: url(../images/top_zhen_bg.gif);
+	margin: 0 auto;
+	border-bottom: 1px solid white;
+}
+#content{
+	width: 640px;
+	height: 706px;
+	background: #f8f7ee;
+	margin: 0 auto;
+}
+#end{
+	width: 640px;
+	height: 79px;
+	margin: 0 auto;
+	background: url(../images/menu.png) no-repeat 0px -160px;
+	position: relative;
+}
+#end ul{
+	list-style: none;
+}
+#end li{
+	width: 102px;
+	height: 79px;
+}
+#end ul li[class="menu_1"]{
+	background: url(../images/menu.png);
+	float: left;
+	padding-right: 4px;
+}
+#end ul li[class="menu_2"]{
+	background: url(../images/menu.png) no-repeat -106px -80px;
+	float: left;
+	padding-right: 4px;
+}
+#end ul li[class="menu_3"]{
+	background: url(../images/menu.png) no-repeat -212px -80px;
+	float: left;
+	padding-right: 4px;
+}
+#end ul li[class="menu_4"]{
+	background: url(../images/menu.png) no-repeat -318px -80px;
+	float: left;
+	padding-right: 4px;
+}
+#end ul li[class="menu_5"]{
+	background: url(../images/menu.png) no-repeat -424px -80px;
+	float: left;
+	cursor: pointer;
+}
+#end ul li[class="menu_6"]{
+	width: 114px;
+	height: 96px;
+	background: url(../images/menu.png) no-repeat -526px top;
+	float: left;
+	margin-top: -17px;
+	cursor: pointer;
+}
+#end .more_more{
+	width: 108px;
+	height: 79px;
+	background: url(../images/more_open.png) no-repeat -414px -104px;
+	position: absolute;
+	/*background: blue;*/
+	left: 418px;
+	cursor: pointer;
+}
+#end .more_open{
+	width: 537px;
+	height: 104px;
+	background: url(../images/more_open.png);
+	position: absolute;
+	top: -104px;
+	left: 6px;
+	display: none;
+}
+#end .more_open a{
+	width: 106px;
+	height: 92px;
+	float: left;
+	display: block;
+	/*background: blue;*/
+}
+#end .more_open .one{
+	width: 103px;
+	margin-left: 3px;
+}
+#end .touxiang_open{
+	width: 425px;
+	height: 399px;
+	background: url(../images/wodequanzi_moban.png) no-repeat left top;
+	position: absolute;
+	top: -400px;
+	left: 207px;
+	display: none;
+}
+#end .touxiang_open .chuangjianshenfen{
+	width: 135px;
+	height: 42px;
+	background: url(../images/wodequanzi_moban.png) no-repeat left -408px;
+	display: block;
+	position: absolute;
+	left: 273px;
+	top: 10px;
+}
