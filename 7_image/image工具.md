@@ -13,6 +13,8 @@
 
 [头像处理](https://github.com/windshg/VPImageCropper)
 
+[iOS8仿照facebook选择相册](https://github.com/mikaoj/BSImagePicker)
+
 
 
 
